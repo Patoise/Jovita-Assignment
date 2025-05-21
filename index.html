@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Static Navigation with Marquee and Banner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Remove default spacing */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top bar (marquee + navbar) fixed */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+
+    /* Marquee style */
+    .top-bar marquee {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 0.4rem 0;
+      margin: 0;
+      display: block;
+    }
+
+    /* Navbar style */
+    .top-bar nav {
+      background-color: #d2e7fd;
+      margin: 0;
+      padding: 0.5rem 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* Offset for content below fixed header */
+    .page-offset {
+      margin-top: 100px; /* Adjust if your top bar is taller */
+    }
+
+/*.banner {
+  width: 100%;
+  height: 75vh; /* 50% of the viewport height */
+  overflow: hidden;
+}
+    /* Banner styling 
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }*/
+.banner {
+    height: 757vh;
+  width: 100%;
+  background-image: url('your-banner.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center
+}
+
+.banner-text {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <marquee behavior="scroll" direction="left">UNITED WE STAND</marquee>
+    <nav class="nav justify-content-center">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="updates.html">Updates</a>
+      <a class="nav-link" href="discussion.html">Discussion</a>
+      <a class="nav-link" href="conclusion.html">Conclusion</a>
+    </nav>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-offset">
+    <!--div class="banner">
+      <img src="/Images/team.jpg" alt="Banner Image">
+    </div--->
+
+
+    
+    <!---main class="container text-center mt-3"--->
+       <!--section class="bg-primary text-white py-4"-->
+
+
+
+<!-- Banner Section -->
+<div class="banner position-relative text-white">
+  <img src="/Images/banner 6.jpg" alt="Banner Image" class="img-fluid w-100" style="height: 80vh; object-fit: cover;">
+  
+<!--div class="banner">
+  <div class="banner-text px-3">
+    <h1 class="display-4 fw-bold">Welcome Class of 2025</h1>
+    <p class="lead">Celebrating Our Journey Together</p>
+  </div>
+</div-->
+
+
+
+  <!-- Centered Text -->
+  <div class="position-absolute top-50 start-50 translate-middle text-center px-3">
+    <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+      Welcome Class of 2025
+    </h1>
+    <p class="lead" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+      Celebrating Our Journey Together
+    </p>
+  </div>
+</div>
+
+
+  <!--div class="container">
+    <h2 class="fs-2 fw-semibold text-center mb-3">Welcome to the Class of 2025 Website</h2>
+    <p class="fs-5 text-center px-3">
+      This platform is a celebration of our journey, memories, and achievements. Let's keep the spirit of unity alive!
+    </p>
+    <p class="fs-5 text-center px-3"></p>
+    <p>This site helps us stay in touch, share updates and collaborate even while on vacation.<p>
+    <p>Explore the updates, participate in discussions and stay connected!</p>
+    <div class="row">
+  </div-->
+<!--/section--->
+ 
+    <!--h1>Welcome to Our Class Vacation Website</h1>
+    <p>This site helps us stay in touch, share updates and collaborate even while on vacation.<p>
+    <p>Explore the updates, participate in discussions and stay connected!</p>
+    <div class="row"-->
+      <!---div class="col-md-6">
+        <img src="images/motto.jpg" alt="Motto Image" class="img-fluid my-4">
+      </div--->
+      <!--div class="col-md-6">
+        <img src="/Images/pexels-hillaryfox-1595391.jpg" alt="Team Image" class="img-fluid my-4">
+      </div-->
+      <!--div class="col-md-6">
+        <img src="/Images/randy-fath-ymf4_9Y9S_A-unsplash.jpg" alt="Team Image" class="img-fluid my-4">
+      </div-->
+      <!--div class="col-md-6">
+        <img src="images/team.jpg" alt="Team Image" class="img-fluid my-4">
+      </div-->
+    </div>
+  </main>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
